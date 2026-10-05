@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan - Yakobus Nelson Kamun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Yakobus Nelson Kamun</h1>
+
+            <p>
+                Mahasiswa Teknologi Sistem Informasi yang ingin menjadi
+                web developer.
+            </p>
+
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#potensi">Potensi</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="page-layout container">
+
+        <main>
+
+            <article id="profil" class="card">
+                <h2>Profil Saya</h2>
+
+                <img
+                    src="images/jpg/jpg.jpg"
+                    alt="Foto profil Yakobus Nelson Kamun"
+                    width="200"
+                >
+
+                <p>
+                    Saya adalah mahasiswa Teknologi Sistem Informasi.
+                    Saya sedang mempelajari pengembangan website menggunakan
+                    HTML dan CSS.
+                </p>
+
+                <p>
+                    Saya tertarik untuk mengembangkan kemampuan dalam membuat
+                    website yang rapi, responsif, dan mudah digunakan.
+                </p>
+            </article>
+
+
+            <section id="potensi" aria-labelledby="judul-potensi">
+                <h2 id="judul-potensi">Potensi Daerah</h2>
+
+                <div class="card-list">
+
+                    <article class="card card--featured">
+                        <span class="badge">Unggulan</span>
+
+                        <h3>Wisata Alam</h3>
+
+                        <img
+                             src="images/jpg/jpg3.jpeg"
+                             alt="Wisata Seribu Musamun"
+                             width="200"
+                        >
+
+                        <p>
+                           Taman Wisata 1.000 Musamus adalah ikon pariwisata unik di Kampung Salor Indah, Distrik Kurik, Kabupaten Merauke, Provinsi Papua Selatan.
+                            Tempat ini menampilkan ribuan gundukan sarang rayap raksasa (Macrotermes sp.) yang menjulang tinggi melebihi tinggi manusia.
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <h3>Produk Lokal</h3>
+
+                        <img
+                             src="images/jpg/jpg4.jpg"
+                             alt="Kopi Rusa"
+                             width="200"
+                        >
+
+                        <p>
+                           Kopi Rusa adalah salah satu produk kopi bubuk legendaris dan khas dari Kota Merauke, Papua Selatan, 
+                           yang menggunakan kemasan dengan ciri khas gambar atau foto pendirinya, Hj. Nurcaya
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <h3>Kegiatan Masyarakat</h3>
+
+                        <p>
+                            Kegiatan masyarakat lokal di Merauke sangat dipengaruhi oleh kekayaan alam dan warisan adat suku asli seperti Suku Marind-Anim dan Suku Kanum. 
+                            Kegiatan mereka umumnya terbagi ke dalam beberapa sektor utama:
+                            Meramu Sagu dan Berburu: Suku asli seperti Marind-Anim secara tradisional melakukan aktivitas ekstraksi pati sagu di dalam hutan ulayat.
+                             Mereka juga berburu hewan liar seperti babi hutan, walabi, atau kasuari untuk memenuhi kebutuhan pangan keluarga
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <section aria-labelledby="judul-kemampuan">
+                <h2 id="judul-kemampuan">Kemampuan yang Dipelajari</h2>
+
+                <div class="card-list">
+
+                    <article class="card">
+                        <h3>HTML</h3>
+
+                        <p>
+                            Mempelajari struktur semantic HTML dan membuat
+                            halaman website yang mudah dipahami.
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <h3>CSS</h3>
+
+                        <p>
+                            Mempelajari styling, layout, Flexbox, responsive
+                            design, dan accessibility.
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <h3>Web Development</h3>
+
+                        <p>
+                            Mengembangkan kemampuan untuk membuat website
+                            yang responsif dan mudah digunakan.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <section id="kontak" aria-labelledby="judul-kontak">
+                <h2 id="judul-kontak">Kontak</h2>
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            minlength="10"
+                            autocomplete="off"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <button type="submit">
+                        Kirim Pesan
+                    </button>
+
+                </form>
+            </section>
+
+        </main>
+
+
+        <aside aria-labelledby="info-tambahan">
+
+            <h2 id="info-tambahan">Informasi Tambahan</h2>
+
+            <p>
+                Halaman ini merupakan hasil Praktikum 4 tentang Modern CSS
+                Layout menggunakan Flexbox.
+            </p>
+
+            <h3>Teknologi</h3>
+
+            <ul>
+                <li>HTML Semantic</li>
+                <li>CSS Flexbox</li>
+                <li>Responsive Layout</li>
+                <li>Accessibility</li>
+            </ul>
+
+        </aside>
+
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; 2026 Yakobus Nelson Kamun.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
