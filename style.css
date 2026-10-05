@@ -32,27 +32,40 @@ body {
   background: var(--color-background);
 }
 
+.container {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
 img,
 video {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
+p,
 a,
-p {
+li,
+h1,
+h2,
+h3 {
   overflow-wrap: anywhere;
 }
 
-header {
-  padding: var(--space-3);
+.site-header {
+  padding-block: var(--space-3);
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
 }
 
-header h1 {
-  margin-top: 0;
+.site-header h1 {
+  margin-block: 0 var(--space-1);
 }
 
+.site-header p {
+  margin-block: 0 var(--space-2);
+}
 
 .nav-list {
   display: flex;
@@ -81,6 +94,7 @@ header h1 {
   background: #eff6ff;
 }
 
+/* Focus harus terlihat */
 .nav-link:focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 2px;
@@ -89,8 +103,8 @@ header h1 {
 .page-layout {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
   align-items: flex-start;
+  gap: var(--space-3);
 
   width: min(100% - 2rem, 70rem);
   margin-inline: auto;
@@ -104,6 +118,7 @@ header h1 {
 
 .page-layout > aside {
   flex: 1 1 16rem;
+  min-width: 0;
 
   padding: var(--space-2);
 
@@ -122,6 +137,8 @@ section h2 {
 }
 
 .card {
+  min-width: 0;
+
   padding: var(--space-2);
 
   background: var(--color-surface);
@@ -134,10 +151,13 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
+
+  min-width: 0;
 }
 
 .card-list > .card {
   flex: 1 1 16rem;
+  min-width: 0;
 }
 
 .card--featured {
@@ -158,6 +178,9 @@ section h2 {
   background: var(--color-primary);
 
   border-radius: var(--radius);
+
+  font-size: 0.875rem;
+  font-weight: bold;
 }
 
 .card img {
@@ -176,6 +199,7 @@ form {
   flex-direction: column;
   gap: var(--space-2);
 
+  width: 100%;
   max-width: 40rem;
 }
 
@@ -183,6 +207,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+
+  min-width: 0;
 }
 
 label {
@@ -192,10 +218,12 @@ label {
 input,
 textarea {
   width: 100%;
+  max-width: 100%;
 
   padding: 0.65rem;
 
   font: inherit;
+  color: var(--color-text);
 
   background: var(--color-surface);
 
@@ -216,6 +244,7 @@ textarea:focus-visible {
 
 button {
   width: fit-content;
+  max-width: 100%;
 
   padding: 0.65rem 1rem;
 
@@ -248,8 +277,8 @@ aside ul {
   padding-inline-start: 1.25rem;
 }
 
-footer {
-  padding: var(--space-3);
+.site-footer {
+  padding-block: var(--space-3);
 
   color: var(--color-muted);
 
@@ -258,15 +287,20 @@ footer {
   border-top: 1px solid var(--color-border);
 }
 
-footer p {
+.site-footer p {
   margin: 0;
 }
 
 pre {
+  max-width: 100%;
   overflow-x: auto;
 }
 
 @media (max-width: 40rem) {
+
+  .container {
+    width: min(100% - 1rem, 70rem);
+  }
 
   .page-layout {
     width: min(100% - 1rem, 70rem);
@@ -281,4 +315,40 @@ pre {
     flex-basis: 100%;
   }
 
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 20rem) {
+
+  .container,
+  .page-layout {
+    width: calc(100% - 1rem);
+  }
+
+  .site-header,
+  .site-footer {
+    padding-block: var(--space-2);
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
+  .badge {
+    inset-block-start: 0.5rem;
+    inset-inline-end: 0.5rem;
+
+    padding: 0.2rem 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .card--featured {
+    padding-block-start: 2.5rem;
+  }
 }
