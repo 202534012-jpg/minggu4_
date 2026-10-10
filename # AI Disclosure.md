@@ -1,6 +1,19 @@
 # AI Disclosure
 
 Dalam pengerjaan Tugas 4, saya menggunakan bantuan AI sebagai pendamping.
+Saya meminta AI untuk memeriksa apakah kode HTML dan CSS saya sudah
+memenuhi ketentuan Tugas 4, terutama terkait:
+
+- Flexbox
+- flex-wrap
+- flex-basis
+- gap
+- min-width: 0
+- responsive layout
+- source order
+- accessibility
+- overflow
+- relative dan absolute positioning
 
 - **Prompt yang digunakan:** Meminta bantuan untuk membuat dan memeriksa layout fleksibel menggunakan CSS Flexbox, responsive layout, badge, dan pengujian halaman.
 - **Saran AI:** Menggunakan `display: flex`, `flex-wrap`, `gap`, `flex-basis`, `min-width: 0`, serta `position: relative` dan `position: absolute` untuk badge.
